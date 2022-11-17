@@ -11,7 +11,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
 }
-
+require_once 'wp_bootstrap_navwalker.php';
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -50,6 +50,7 @@ function kika_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'kika' ),
+			'menu-top' => esc_html__( 'virsutinis', 'kika' ),
 		)
 	);
 
